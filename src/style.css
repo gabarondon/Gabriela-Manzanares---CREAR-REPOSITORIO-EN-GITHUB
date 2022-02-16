@@ -129,7 +129,9 @@ article, section, main {
 
 /* hero cierre */
 
-
+#portfolio {
+    animation: reboteIn_abajo 1.3s 1;
+}
 
 h1 {
     font-size: 8rem;
@@ -237,6 +239,7 @@ a:hover {
     align-items: center;
     width: 30%;
     padding-top: 100px;
+    animation: from-left 1.5s ease;
 
 
 }
@@ -519,6 +522,41 @@ h4 {
 }
 
 /* footer cierre */
+
+/*ANIMACION */
+
+@keyframes from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes reboteIn_abajo {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100vw);
+    }
+
+    50% {
+
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+
+    70% {
+
+        transform: translateY(10px);
+
+    }
+
+}
 
 
 /* ----------- media query ---------------------------- */
